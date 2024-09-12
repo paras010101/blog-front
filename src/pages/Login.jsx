@@ -13,7 +13,7 @@ function Login() {
     const login = async () => {
         try {
             const data = { username, password };
-            const response = await axios.post("http://localhost:3001/auth/login", data);
+            const response = await axios.post("https://blog-backend-k2au2wpqn-paras-sharma-s-projects-55e1989b.vercel.app//auth/login", data);
 
             if (response.data.error) {
                 alert(response.data.error);

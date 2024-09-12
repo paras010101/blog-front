@@ -20,7 +20,7 @@ function Registration() { // Rename the component to reflect its purpose
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("http://localhost:3001/auth", data).then((response)=>{
+      const response = await axios.post("http/auth", data).then((response)=>{
         // console.log("Registration response:", response.data); // Handle successful registration
         if(response.data.error){
           alert("user name already exist please try with some other user name")

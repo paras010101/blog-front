@@ -14,10 +14,10 @@ function Profile (){
 
     let {id} = useParams();
     useEffect(()=>{
-        axios.get(`http://localhost:3001/auth/basicinfo/${id}`).then((response)=>{
+        axios.get(`https://blog-backend-k2au2wpqn-paras-sharma-s-projects-55e1989b.vercel.app//${id}`).then((response)=>{
             setUsername(response.data.username);
         })
-        axios.get(`http://localhost:3001/posts/byuserid/${id}`).then((response)=>{
+        axios.get(`https://blog-backend-k2au2wpqn-paras-sharma-s-projects-55e1989b.vercel.app//${id}`).then((response)=>{
             setListOfPosts(response.data)
         })
         

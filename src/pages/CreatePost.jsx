@@ -20,7 +20,7 @@ function CreatePost() {
 
   const onSubmit = async (data, { setSubmitting, resetForm }) => {
     try {
-      const response = await axios.post("http://localhost:3001/posts", data, {
+      const response = await axios.post("https://blog-backend-k2au2wpqn-paras-sharma-s-projects-55e1989b.vercel.app//posts", data, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       });
 

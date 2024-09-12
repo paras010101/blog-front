@@ -16,7 +16,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/posts',{headers :{accessToken : localStorage.getItem("accessToken")}});
+        const response = await axios.get('https://blog-backend-k2au2wpqn-paras-sharma-s-projects-55e1989b.vercel.app//posts',{headers :{accessToken : localStorage.getItem("accessToken")}});
         setListOfPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
@@ -28,7 +28,7 @@ function Home() {
 
   const likeAPost = (postId) => {
     axios.post(
-      'http://localhost:3001/like',
+      'https://blog-backend-k2au2wpqn-paras-sharma-s-projects-55e1989b.vercel.app//like',
       { PostId: postId },
       {
         headers: {

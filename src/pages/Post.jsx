@@ -16,7 +16,7 @@ function Post() {
   const navigate = useNavigate();
 
   const deleteComment = (id)=>{
-    axios.delete(`http://localhost:3001/comments/${id}`,{
+    axios.delete(`https://blog-backend-k2au2wpqn-paras-sharma-s-projects-55e1989b.vercel.app//${id}`,{
       headers: { accessToken: localStorage.getItem("accessToken") } 
     }
     )
