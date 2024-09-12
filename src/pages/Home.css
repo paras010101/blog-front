@@ -1,0 +1,120 @@
+/* Container for the posts */
+.posts-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* List of posts */
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Individual post item */
+.post-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  text-align: center; /* Centering the content */
+}
+
+/* Hover effect on post */
+.post-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Post header (title) */
+.post-header {
+  margin-bottom: 12px;
+}
+
+/* Title styling (centered) */
+.post-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  text-align: center; /* Center the title */
+}
+
+/* Body (post content) */
+.post-body {
+  font-size: 1rem;
+  margin: 16px 0;
+  color: #555;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* See more link styling */
+.see-more {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer (author and like button) */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Author styling */
+.post-author {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Likes section */
+.post-likes {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+/* Like button with icon */
+.like-button {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.like-button svg {
+  margin-right: 5px;
+}
+
+/* Like button hover effect */
+.like-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Like count */
+.like-count {
+  font-size: 1rem;
+  color: #333;
+  margin-left: 10px;
+}
